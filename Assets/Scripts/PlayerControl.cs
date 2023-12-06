@@ -10,7 +10,7 @@ public class PlayerControl : MonoBehaviour
     public GameObject bulletPrefab;
     private float horizontal;
     private float vertical;
-    public AudioSource gunshotSound;
+    public AudioClip gunshotSound;
 
     void Awake()
     {
@@ -33,7 +33,7 @@ public class PlayerControl : MonoBehaviour
             Instantiate(bulletPrefab, transform.position, transform.rotation);
             if (gunshotSound != null)
             {
-                gunshotSound.Play();
+                AudioSource.PlayClipAtPoint(gunshotSound, transform.position);
             }
         }
     }

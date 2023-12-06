@@ -32,7 +32,7 @@ public class BulletControl : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        else if (collision.gameObject.tag == "Horizontal")
+        else if (collision.gameObject.tag == "Up")
         {
             Destroy(this.gameObject);
         }

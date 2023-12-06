@@ -8,6 +8,11 @@ TagManager:
   - Vertical
   - Horizontal
   - Bullet
+  - Up
+  - Down
+  - Left
+  - Right
+  - EnemiesLimit
   layers:
   - Default
   - TransparentFX
